@@ -1,0 +1,341 @@
+ Based on http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.1 | 201072010 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+/* tables may still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* =Font sizes & margins */
+
+p, ul, ol, dl, address, table, pre, form, fieldset {
+	margin-bottom: 1.5em;
+}
+h1 {font-size: 2.25em;font-weight: bold;margin-bottom:.5em;}
+h2 {font-size: 1.5em;line-height: 1.25; }
+h3 {font-size: 1.3125em;}
+h4 {font-size: 1.125em;}
+h5, h6 {font-size: 1em;}
+
+/* html5 stuff */
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section { display: block; }
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #000 url(../images/laughing_grey.jpg) no-repeat fixed 95% 95%;
+  font-family: "brandon-grotesque", helvetica neue, arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+header, section, footer {
+  margin: 0 auto;
+}
+
+abbr[title='and'] {
+ font-family: "Hoefler Text","Baskerville", "Palatino", "Book Antiqua", serif;
+ font-style: italic;
+ font-weight: normal;
+ border:0;
+}
+a:link, a:visited {
+  color:hsla(4, 84%, 60%, 0.8);
+  text-decoration:none;
+  border-bottom:1px dotted transparent;
+}
+a:active, a:hover {
+  border-bottom:1px dotted;
+  color:hsla(4, 84%, 60%, 1);
+}
+.about a {
+  color: inherit;
+  border-bottom:1px dotted;
+}
+.about a:hover {
+  color: hsla(216, 4%, 25%,1);
+}
+.branding {
+  display:none;
+}
+.probs {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #bfe1df url(../images/viewports_dark.png) fixed;
+  color: hsla(216, 4%, 25%,1); /* #3c3e41 */
+  text-align: center;
+}
+.twitter-tweet {
+  position: relative;
+  margin: 0 auto;
+  padding: 5%;
+  font-size: 3em;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.tweet-permalink {
+  display: inline-block;
+  margin: 1em auto 0;
+  font-family: "Livory", Georgia, serif;
+  font-size: 0.425em;
+  text-align: center;
+  text-transform: none;
+}
+.qu {
+  margin: 0;
+}
+.qu span {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.l1, .l5 {
+  font-size: 1em;
+  letter-spacing: 0.165em;
+}
+.l1 {
+  letter-spacing: 0.295em;
+  line-height: 1.5;
+}
+.l2, .l3{
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.035em;
+}
+.l2 {
+  line-height: 1.125;
+}
+
+.l3 {
+  font-size: 4.5em;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  margin-left: 0.15em;
+}
+.l4, .l8 {
+  font-size: 0.9125em;
+  font-style: italic;
+  font-weight:bold;
+  letter-spacing: 0.2em;
+}
+.l5 {
+  letter-spacing: 0.295em;
+  line-height: 2;
+}
+
+.l6, .l7 {
+  font-size: 2.8125em;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.l7 {
+  font-size: 3.125em;
+  line-height:1.25;
+  letter-spacing: 0.05em;
+  margin-left: 0.1em;
+}
+
+.about {
+  width: 100%;
+  padding: 5%;
+  background: hsla(4, 84%, 60%, 0.9) url(../images/pattern.png); /* #ef4f43 */
+  color: #f4f5f0;
+  font-family: "livory", Georgia, serif;
+  font-size: 2em;
+  text-shadow: 0 0 1px hsla(4, 84%, 40%, 1);
+  -webkit-box-shadow:inset 0 -1px 5px rgba(0,0,0,.5);
+     -moz-box-shadow:inset 0 -1px 5px rgba(0,0,0,.5);
+          box-shadow:inset 0 -1px 5px rgba(0,0,0,.5);
+
+}
+.about h1 {
+  margin: 0 0 1em;
+}
+.about h1 span {
+  display: block;
+  text-transform: uppercase;
+  font-family: "brandon-grotesque";
+  font-weight: normal;
+}
+.about h1 span:last-child {
+  font-family: livory;
+  font-style: italic;
+  text-transform: none;
+}
+
+.about p {
+  width: 47.5%;
+  padding: 1em 2.45% 0 0;
+  display: table-cell;
+}
+.about p + p {
+  padding: 0 0 0 2.45%;
+}
+footer {
+  position: relative;
+  xwidth:100%;
+  padding: 1em 5%;
+  min-height:500px;
+  clear:both;
+  color: hsla(100, 7%, 92%, 0.8);
+  font-family: "livory", Georgia, serif;
+  font-size: 2em;
+}
+footer p {
+  width: 80%;
+}
+.copyright {
+  color: hsla(100, 7%, 92%, 0.6);
+  font-size:0.5em;
+}
+footer small {
+  position: absolute;
+  right:5%;
+  bottom: 0;
+  font-size: 0.5em;
+  opacity: 0.25;
+  -moz-opacity: 0.25;
+  filter:alpha(opacity=.25);
+}
+footer small:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
+
+@media (max-width: 30em) {
+  body {
+    font-size: 10px;
+  }
+  .tweet-permalink {
+    font-size: 0.7em;
+  }
+  .about p,
+  .about p + p {
+    display: block;
+    width: 100%;
+    padding: 1em 0 0;
+    margin: 0;
+  }
+  footer p {
+    font-size: 0.9125rem;
+    width: 90%;
+  }
+}
+
+@media (max-width:38em) {
+  .twitter-tweet {
+    font-size: 1.375em;
+  }
+  .about {
+    font-size: 1em;
+  }
+  .about p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 47em) {
+    .twitter-tweet {
+    font-size: 1.375em;
+  }
+  .about {
+    font-size: 1em;
+  }
+  .about p {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width:47em) {
+  .twitter-tweet {
+    font-size: 1.75em;
+  }
+  .about {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width:56em) {
+  .twitter-tweet {
+    font-size: 2em;
+  }
+  .about {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:63em) {
+  .twitter-tweet {
+    font-size: 2.5em;
+  }
+  .about {
+    font-size: 1.75em;
+  }
+  .about h1 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width:78em) {
+  .twitter-tweet {
+    font-size: 3em;
+  }
+  .about {
+    font-size: 2em;
+  }
+    footer p {
+    font-size: 0.875em;
+  }
+}

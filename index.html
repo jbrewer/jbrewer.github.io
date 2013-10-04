@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Josh Brewer : Quality design, lovingly distilled in San Francisco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="twitter:account_id" content="12555" />
+
+<script type="text/javascript" src="http://use.typekit.com/dif1xdu.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<style type="text/css">
+/* Based on http://meyerweb.com/eric/tools/css/reset/
+/* v1.1 | 201072010 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+/* tables may still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* =Font sizes & margins */
+
+p, ul, ol, dl, address, table, pre, form, fieldset {
+  margin-bottom: 1.5em;
+}
+h1 {font-size: 2.25em;font-weight: bold;margin-bottom:.5em;}
+h2 {font-size: 1.5em;line-height: 1.25; }
+h3 {font-size: 1.3125em;}
+h4 {font-size: 1.125em;}
+h5, h6 {font-size: 1em;}
+
+/* html5 stuff */
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section { display: block; }
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #000 url(images/laughing_grey.jpg) no-repeat fixed 95% 95%;
+  background-size: 25%;
+  font-family: "brandon-grotesque", helvetica neue, arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+header, section, footer {
+  margin: 0 auto;
+}
+
+abbr[title='and'] {
+ font-family: "Hoefler Text","Baskerville", "Palatino", "Book Antiqua", serif;
+ font-style: italic;
+ font-weight: normal;
+ border:0;
+}
+a:link, a:visited {
+  color:hsla(4, 84%, 60%, 0.8);
+  text-decoration:none;
+  border-bottom:1px dotted transparent;
+}
+a:active, a:hover {
+  border-bottom:1px dotted;
+  color:hsla(4, 84%, 60%, 1);
+}
+
+.branding {
+  padding: 1em;
+  text-align: center;
+  font-family: Livory, Georgia, serif;
+}
+.branding a {
+  font-weight: bold;
+}
+.branding a:hover {
+  border-bottom: 0;
+}
+.branding em {
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+}
+.probs {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #bfe1df url(images/viewports_dark.png) fixed;
+  color: hsla(216, 4%, 25%,1); /* #3c3e41 */
+  text-align: center;
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+
+}
+.twitter-tweet {
+  position: relative;
+  margin: 0 auto;
+  padding: 5%;
+  font-size: 3em;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.tweet-permalink {
+  display: inline-block;
+  margin: 1em auto 0;
+  font-family: "Livory", Georgia, serif;
+  font-size: 0.425em;
+  text-align: center;
+  text-transform: none;
+}
+.qu {
+  margin: 0;
+}
+.qu span {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.l1, .l5 {
+  font-size: 1em;
+  letter-spacing: 0.165em;
+}
+.l1 {
+  letter-spacing: 0.295em;
+  line-height: 1.5;
+}
+.l2, .l3{
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.035em;
+}
+.l2 {
+  line-height: 1.125;
+}
+
+.l3 {
+  font-size: 4.5em;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  margin-left: 0.15em;
+}
+.l4, .l8 {
+  font-size: 0.9125em;
+  font-style: italic;
+  font-weight:bold;
+  letter-spacing: 0.2em;
+}
+.l5 {
+  letter-spacing: 0.295em;
+  line-height: 2;
+}
+
+.l6, .l7 {
+  font-size: 2.8125em;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.l7 {
+  font-size: 3.125em;
+  line-height:1.25;
+  letter-spacing: 0.05em;
+  margin-left: 0.1em;
+}
+
+footer {
+  position: relative;
+  padding: 1em 5%;
+  min-height:18em;
+  clear:both;
+  color: hsla(100, 7%, 92%, 0.8);
+  font-family: "livory", Georgia, serif;
+  font-size: 2em;
+}
+footer p {
+  width: 70%;
+}
+.copyright {
+  color: hsla(100, 7%, 92%, 0.6);
+  font-size:0.5em;
+}
+footer small {
+  position: absolute;
+  right:5%;
+  bottom: 0;
+  font-size: 0.5em;
+  opacity: 0.25;
+  -moz-opacity: 0.25;
+  filter:alpha(opacity=.25);
+  -webkit-transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+          transition: opacity .2s ease-in-out;
+}
+footer small:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
+
+@media (max-width: 30em) {
+  body {
+    font-size: 10px;
+  }
+  header {
+    font-size: 0.875em;
+  }
+  .tweet-permalink {
+    font-size: 0.7em;
+  }
+  footer {
+    min-height: 24em;
+  }
+  footer p {
+    font-size: 0.9125rem;
+    width: 90%;
+  }
+}
+
+@media (max-width:38em) {
+  body {
+    background: #000;
+  }
+  .twitter-tweet {
+    font-size: 1.375em;
+  }
+  footer {
+    font-size: 0.875em;
+  }
+
+}
+
+@media (max-width: 47em) {
+  .twitter-tweet {
+    font-size: 1.375em;
+  }
+  footer {
+    font-size: 1em;
+  }
+}
+
+@media (min-width:47em) {
+  .twitter-tweet {
+    font-size: 1.75em;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width:56em) {
+  .twitter-tweet {
+    font-size: 2em;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width:63em) {
+  .twitter-tweet {
+    font-size: 2.5em;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width:78em) {
+  .twitter-tweet {
+    font-size: 3em;
+  }
+  footer p {
+    font-size: 0.75em;
+  }
+}
+</style>
+
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body id="index" class="home">
+<header class="branding">
+  <div>
+    <a href="http://www.jbrewer.me" class="branding">jbrewer.me</a>
+    <em class="tagline">Quality design, lovingly distilled in San Francisco.</em>
+  </div>
+</header>
+<section class="probs" role="banner">
+  <blockquote class="twitter-tweet">
+    <p class="qu">
+      <span class="l1">If you think</span>
+      <span class="l2">Responsive&rsquo;s</span>
+      <span class="l3">simple</span>
+      <span class="l4">I feel bad for you son</span>
+      <span class="l5">We got</span>
+      <span class="l6">ninety-nine</span>
+      <span class="l7">viewports</span>
+      <span class="l8">but the iPhone's just one</span>
+    </p>
+    <a href="https://twitter.com/jbrewer/status/178528003402379265" data-datetime="2012-03-10T17:09:27+00:00" title="My homage to Jay-Z and responsive web design" class="tweet-permalink">March 10, 2012</a></blockquote>
+</section>
+<footer role="contentinfo">
+  <p>I'm a <strike>graphic</strike> <strike>interaction</strike> <strike>UX</strike> <strike>product</strike> designer living and working in San Francisco.</p>
+  <p>I am a mentor at <a href="http://designerfund.com/">Designer Fund</a>, an active advisor to serveral startups, and in 2012, Fast Company named me one of "fifty designers shaping the future of design."</p> 
+  <p>Previously, I was Principal Designer at <a href="http://twitter.com">Twitter</a>, co-creator of <a href="http://52weeksofux.com" title=
+  "A discourse on the process of designing for real people">52 Weeks Of UX</a> &amp; <a href="http://ffffallback.com" title="A simple tool for bulletproof web typography">Ffffallback</a> and the Director of User Experience for <a href="http://socialcast.com">Socialcast</a>, which was acquired by VMware in 2011.</p>
+  <p>You can follow me on <a href="http://twitter.com/jbrewer" rel="me">Twitter</a> or contact me via email: <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x6a;&#111;&#115;&#x68;&#x40;&#x6a;&#x62;&#114;&#101;&#x77;&#x65;&#x72;&#46;&#x6d;&#101;" class="email">&#x6a;&#111;&#115;&#x68;&#x40;&#x6a;&#x62;&#114;&#101;&#x77;&#x65;&#x72;&#46;&#x6d;&#101;</a>.</p>
+  <p class="copyright">&copy; 2012. All rights reserved.</p>
+  <small>Photo courtesy of <a href="http://www.flickr.com/people/fillyc/">fillyc</a></small>
+</footer>
+</div>
+
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-109790-5");
+  pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+</body>
+</html>
