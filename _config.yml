@@ -1,0 +1,13 @@
+name: Josh Brewer
+description: Josh Brewer · Quality design, lovingly distilled in San Francisco.
+keywords: Design, responsive, mobile, ux, typography, startups
+url: http://www.jbrewer.me
+permalink: /:year/:month/:day/:title
+
+auto: true
+markdown: rdiscount
+rdiscount extensions: [smart]
+# permalink: /:title
+# redirects: yes
+
+exclude: ['README.md', 'config.rb']

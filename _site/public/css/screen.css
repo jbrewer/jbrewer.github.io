@@ -1,0 +1,24 @@
+/* Normalize variables
+-------------------------------------------------------------- */
+@imoort "normalize";
+/* line 3, ../../sass/screen.scss */
+body {
+  font-family: "elena-web-basic", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6;
+  background: #fff;
+  color: #373737;
+}
+
+/* line 10, ../../sass/screen.scss */
+h1 {
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+/* line 16, ../../sass/screen.scss */
+strike {
+  color: #999;
+  word-wrap: break-word;
+}

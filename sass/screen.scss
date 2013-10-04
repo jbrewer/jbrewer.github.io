@@ -1,0 +1,19 @@
+@import "base";
+
+body {
+  font-family: "elena-web-basic", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6;
+  background: #fff;
+  color: #373737;
+}
+h1 {
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+strike {
+  color: #999;
+  word-wrap: break-word;
+}
