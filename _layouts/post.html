@@ -17,27 +17,16 @@
 
         </article>
 
-        <!--aside class="related-posts">
+        <!-- {% include recent-posts.html %} -->
 
-          <h2>Related</h2>
-
-          <ul>
-
-          {% for post in site.related_posts %}
-            <li>
-              <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-
-          </ul>
-
-        </aside>
-
-      </div> < end .content -->
+      </div> <!-- end .content>
 
       {% include footer.html %}
 
     </div>
 
+    {% include js.html %}
+    
   </body>
+
 </html>
